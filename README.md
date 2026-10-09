@@ -1,11 +1,9 @@
 Banco API Performance
 Projeto de testes de performance para APIs bancárias utilizando JavaScript e k6, com foco na avaliação do comportamento dos endpoints, tempo de resposta, taxa de falhas e estabilidade durante a execução de diferentes cenários de carga.
-
 1. Introdução
 Este repositório tem como objetivo centralizar os testes de performance da API bancária, permitindo avaliar seu comportamento diante de diferentes volumes de requisições e identificar possíveis gargalos de desempenho.
 Os testes são desenvolvidos com o k6, ferramenta de testes de carga que permite simular usuários virtuais, executar requisições HTTP e coletar métricas durante a execução.
 A URL da API é configurada por meio da variável de ambiente BASE_URL, permitindo executar os mesmos testes em diferentes ambientes sem precisar alterar o código-fonte.
-
 2. Tecnologias utilizadas
 Tecnologia	Finalidade
 JavaScript	Linguagem utilizada para implementar os scripts de teste.
@@ -13,7 +11,6 @@ k6	Execução dos testes de performance e coleta de métricas.
 Git	Controle de versão do projeto.
 GitHub	Hospedagem do repositório e versionamento do código.
 HTML	Exportação do relatório de execução do k6 para visualização posterior.
-
 3. Estrutura do repositório
 banco-api-performance/
 ├── config/
@@ -41,7 +38,6 @@ utils/ — Utilitários
 Agrupa funções utilitárias compartilhadas, destinadas a simplificar tarefas recorrentes e manter a organização do código.
 .gitignore — Arquivos ignorados pelo Git
 Define quais arquivos e diretórios não devem ser versionados, como arquivos temporários, configurações locais e relatórios gerados durante a execução, conforme as regras configuradas no projeto.
-
 4. Instalação do projeto
 4.1. Pré-requisitos
 Antes de começar, instale as seguintes ferramentas:
@@ -68,7 +64,6 @@ A variável é passada ao k6 com a opção -e, permitindo que os scripts acessem
 Exemplo de utilização no JavaScript:
 const BASE_URL = __ENV.BASE_URL;
 Dessa forma, os scripts podem reutilizar a mesma implementação em ambientes diferentes.
-
 5. Execução dos testes e relatórios
 5.1. Executar um teste de performance
 No terminal, estando na raiz do repositório, execute:
